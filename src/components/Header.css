@@ -1,0 +1,69 @@
+/* Header.css */
+
+.header {
+  background-color: #f9fafb; /* Gray 50 */
+  padding: 24px; /* p-6 */
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow-lg */
+}
+
+.header h1 {
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: bold; /* font-bold */
+}
+
+.image-class {
+  width: 200px; /* Fixed width */
+  height: 200px; /* Fixed height */
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 50%; /* Rounded */
+  margin-right: 10px; /* Gap between images */
+  transition: transform 0.3s ease-in-out; /* Transition for hover */
+}
+
+.header p {
+  font-size: 35px; /* text-lg */
+  margin-top: 35px; /* mt-2 */
+}
+
+.description {
+  margin-bottom: 1rem; /* Equivalent to mb-4 */
+  font-size: 2rem; /* Equivalent to text-3xl */
+  font-weight: 800; /* Equivalent to font-extrabold */
+  color: #1f2937; /* Equivalent to text-gray-900 */
+}
+
+.description.dark {
+  color: #ffffff; /* Equivalent to dark:text-white */
+}
+
+@media (min-width: 768px) {
+  /* Equivalent to md:text-5xl */
+  .description {
+    font-size: 3rem; /* Equivalent to text-5xl */
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Equivalent to lg:text-6xl */
+  .description {
+    font-size: 3.75rem; /* Equivalent to text-6xl */
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(
+    to right,
+    #34d399,
+    #38bdf8
+  ); /* Equivalent to bg-gradient-to-r from-emerald-600 to-sky-400 */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* To make text transparent */
+}
+
+.image-container {
+  display: flex; /* Use flexbox to align images */
+  justify-content: center; /* Center align images */
+  margin-top: 16px; /* mt-4 */
+  overflow: hidden; /* Hide overflow if needed */
+}

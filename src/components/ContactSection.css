@@ -1,0 +1,196 @@
+.contact-section {
+  margin-top: -20px;
+  margin-bottom: -20px;
+  overflow: hidden; /* Prevent overflow */
+  color: #ffffff;
+  margin-left: -20px;
+  border: none;
+  background-color: #363232; /* Black background */
+}
+
+.container {
+  padding: 20px;
+  width: 500px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Default to a single column */
+  gap: 2rem;
+  height: 100vh; /* Full viewport height */
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr 1fr; /* Two equal columns on larger screens */
+  }
+}
+
+.image-section {
+  margin-bottom: 2.5rem;
+  overflow: hidden; /* Prevent overflow from this section */
+}
+
+.group {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Prevent overflow */
+}
+
+.image-wrapper {
+  position: relative;
+  height: 100%; /* Ensure it fills the container */
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+  background-color: rgba(79, 70, 229, 0.8);
+}
+
+.title {
+  font-family: "Manrope", sans-serif;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  position: absolute;
+  top: 2.75rem;
+  left: 2.75rem;
+}
+
+.contact-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px; /* Fixed height */
+  padding: 2.75rem;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Background for better visibility */
+}
+
+@media (max-width: 1024px) {
+  .contact-info {
+    padding: 1.25rem;
+  }
+}
+
+.info-box {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  visibility: hidden;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.contact-text {
+  color: black;
+  font-size: 1rem;
+  margin-left: 1.25rem;
+}
+
+.form-section {
+  background-color: #f8f9fa;
+  padding: 40px;
+  border-radius: 1rem;
+  overflow: hidden; /* Prevent overflow */
+}
+
+.form-title {
+  color: #00d9ff;
+  font-family: "Manrope", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2.75rem;
+  margin-top: 20px;
+}
+
+.form-input {
+  width: 89%;
+  height: 3rem;
+  color: #ffffff;
+  background-color: transparent;
+  font-size: 1.125rem;
+  padding-left: 1rem;
+  margin-left: 10px;
+  margin-bottom: 2.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 9999px;
+  overflow: hidden; /* Prevent overflow */
+}
+
+.radio-group {
+  margin-bottom: 2.5rem;
+}
+
+.radio-label {
+  color: #6b7280;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  margin-left: 30px;
+}
+
+.radio-options {
+  display: flex;
+  margin-left: 60px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2.75rem;
+}
+
+.radio-input {
+  display: none;
+}
+
+.radio-text {
+  color: #6b7280;
+  font-size: 1rem;
+  margin-bottom: -50px;
+  margin-top: -20px;
+}
+
+.submit-btn {
+  width: 89%;
+  height: 45px;
+  color: white;
+  background-color: #00b7ff;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  margin-top: -90px;
+  transition: background-color 0.7s;
+}
+
+.submit-btn:hover {
+  background-color: #5c578f;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px; /* Size of the icon */
+  color: #4f46e5; /* Color of the icon */
+}
+
+.close-button:hover {
+  color: #3b82f6; /* Change color on hover */
+}

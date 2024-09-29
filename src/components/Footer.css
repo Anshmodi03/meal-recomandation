@@ -1,0 +1,77 @@
+footer {
+  color: #ffffff; /* White text color */
+  padding: 1.5rem 0; /* Consistent vertical padding */
+  text-align: center; /* Centered text for a cohesive layout */
+}
+
+footer p {
+  margin: 0.5rem 0; /* Spacing between paragraphs */
+  font-size: 1rem; /* Slightly larger font for readability */
+}
+
+.link {
+  margin-top: 0.5rem; /* Space above the link */
+}
+
+.link {
+  color: #6200ff; /* Indeterminate link color */
+  width: 10%;
+  margin-left: 600px;
+  justify-content: center;
+  text-align: center;
+  padding: 0.5rem 1rem; /* Padding around the link for better click area */
+  border-radius: 9999px; /* Rounded corners for a modern look */
+  font-weight: 500; /* Semi-bold font weight */
+  text-decoration: none; /* Remove underline from link */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transitions for color and background */
+}
+
+.link:hover {
+  color: #ffffff; /* Change link color to white on hover */
+  background-color: #6200ff; /* Background color change on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 640px) {
+  footer {
+    padding: 1rem; /* Adjust padding for smaller screens */
+  }
+
+  footer p {
+    font-size: 0.9rem; /* Slightly smaller font on mobile for better fit */
+  }
+
+  .link {
+    padding: 0.4rem 0.8rem; /* Reduced padding for mobile */
+  }
+}
+
+.pop-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it is above other elements */
+}
+
+.pop-content {
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  border-radius: 8px;
+  width: 500px;
+  position: relative; /* Relative positioning for close button */
+  box-shadow: none; /* Remove border or shadow */
+}
+
+.close-pop {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}

@@ -1,0 +1,77 @@
+/* RecipePopup.css */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 1000; /* Ensure it's above everything else */
+}
+
+span {
+  font-weight: 900;
+  color: blueviolet;
+}
+
+strong {
+  color: rgb(96, 255, 189);
+  font-weight: 900;
+}
+
+.popup-content {
+  background: rgb(0, 0, 0);
+  color: white;
+  border-radius: 8px;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px; /* Limit maximum width */
+  max-height: 90vh; /* Limit maximum height to viewport height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative; /* For the close button */
+
+  /* Hide scrollbar for WebKit browsers */
+  &::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: antiquewhite;
+}
+
+.popup-title {
+  margin: 0;
+  padding: 20px;
+  font-weight: 800;
+  color: coral;
+}
+
+.popup-image {
+  width: 200px;
+  border-radius: 8px;
+  margin-left: 130px;
+}
+
+.popup-description {
+  padding: 2px;
+  font-size: 1.2rem;
+}
+
+.cautions {
+  color: rgb(201, 29, 29);
+  font-weight: 900;
+}

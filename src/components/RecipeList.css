@@ -1,0 +1,118 @@
+#recipe-list {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(300px, 1fr)
+  ); /* Responsive grid */
+  gap: 1.5rem; /* Space between cards */
+  padding: 2rem; /* Padding around the grid */
+  height: auto;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Shadow */
+  border: 1px solid #cbd5e1; /* Border */
+  border-radius: 0.5rem; /* Rounded corners */
+  width: 100%; /* Full width for responsiveness */
+  height: auto;
+  text-decoration: none; /* No text decoration */
+  color: inherit; /* Inherit text color */
+  transition: all 0.3s ease-in-out; /* Transition for hover effects */
+}
+
+.rec {
+  margin-top: 20px;
+  font-weight: 900;
+  text-align: center;
+  font-size: 40px;
+  margin: auto;
+}
+
+.card:hover {
+  box-shadow: 0 0px 2px rgb(26, 18, 18);
+  transform: scale(1.02); /* Slight scale on hover */
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.card-image {
+  position: relative;
+  padding: 0.625rem; /* Padding for image container */
+  height: auto; /* Auto height */
+  overflow: hidden; /* Hide overflow */
+  border-radius: 0.75rem; /* Rounded corners for image */
+  background-clip: border-box; /* Background clipping */
+}
+
+.image {
+  height: auto; /* Maintain aspect ratio */
+  width: 100%; /* Full width */
+  object-fit: cover; /* Cover the container */
+  border-radius: 0.375rem; /* Rounded corners for image */
+}
+
+.card-content {
+  padding: 0px; /* Reset padding */
+  flex: 1; /* Allow content to fill available space */
+}
+
+.card-content .product-name {
+  background-color: transparent; /* No background */
+  font-size: 20px; /* Font size */
+  font-weight: 500; /* Medium weight */
+  margin: -10px; /* Adjust margin */
+  height: 60px; /* Fixed height */
+}
+
+span {
+  font-weight: 900; /* Bold font weight */
+}
+
+p {
+  margin: 0; /* Reset margin */
+  font-size: 0.9375rem; /* Font size */
+  font-weight: 300; /* Light font weight */
+  line-height: 1.5; /* Line height */
+  margin-top: 20px; /* Space above paragraphs */
+}
+
+.card-content .product-description {
+  color: #000000; /* Text color */
+  font-weight: 500; /* Medium weight */
+  text-align: center; /* Center text */
+  margin: 10px; /* Margin around description */
+}
+
+.card-content .source {
+  margin-top: 20px; /* Space above source */
+}
+
+.read-more-button {
+  background-color: #007bff; /* Primary button color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 15px; /* Padding for button */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1rem; /* Font size */
+  margin-bottom: 10px; /* Space below button */
+  transition: background-color 0.3s ease; /* Transition for hover */
+  margin-left: auto; /* Center button */
+  margin-right: auto; /* Center button */
+  display: block; /* Block element for centering */
+}
+
+.read-more-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  #recipe-list {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
+  }
+}
