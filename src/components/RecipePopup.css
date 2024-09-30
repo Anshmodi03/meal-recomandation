@@ -206,6 +206,7 @@ strong {
 
 .caution {
   margin-top: -250px;
+  margin-left:-200px;
   font-weight: 900;
   color: #333;
 }
