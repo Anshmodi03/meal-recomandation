@@ -117,7 +117,7 @@ const RecipeListPopup = ({ recipe, onClose }) => {
 
           {/* Cautions Section */}
           <div className="popup-cautions">
-            <h3 className="highlight">Cautions</h3>
+            <h3 className=" caution">Cautions</h3>
             {recipe.recipe.cautions.length > 0 ? (
               <ul>
                 {recipe.recipe.cautions.map((caution, index) => (
