@@ -1,4 +1,4 @@
-/* RecipePopup.css */
+/* Overlay and Popup Styling */
 .popup-overlay {
   position: fixed;
   top: 0;
@@ -7,71 +7,205 @@
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
   z-index: 1000; /* Ensure it's above everything else */
 }
 
-span {
-  font-weight: 900;
-  color: blueviolet;
-}
-
-strong {
-  color: rgb(96, 255, 189);
-  font-weight: 900;
-}
-
+/* Popup Container */
 .popup-content {
-  background: rgb(0, 0, 0);
-  color: white;
-  border-radius: 8px;
+  background: #fff; /* Set background to white */
+  color: #333; /* Set text color to dark gray */
+  border-radius: 10px;
   padding: 20px;
   width: 90%;
-  max-width: 500px; /* Limit maximum width */
+  max-width: 600px; /* Adjusted width for the popup */
   max-height: 90vh; /* Limit maximum height to viewport height */
   overflow-y: auto; /* Enable vertical scrolling */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  position: relative; /* For the close button */
-
-  /* Hide scrollbar for WebKit browsers */
-  &::-webkit-scrollbar {
-    display: none; /* Hide scrollbar */
-  }
+  position: relative; /* Position for the close button */
+  font-family: "Arial", sans-serif;
 }
 
+/* Close Button */
 .close-button {
   position: absolute;
   top: 10px;
   right: 10px;
   background: transparent;
   border: none;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   cursor: pointer;
-  color: antiquewhite;
+  color: #333; /* Close button color */
 }
 
+.close-button i {
+  font-size: 1.5rem; /* Larger close icon */
+}
+
+/* Title */
 .popup-title {
-  margin: 0;
-  padding: 20px;
-  font-weight: 800;
-  color: coral;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: left;
+  color: #333;
 }
 
+/* Recipe Image */
 .popup-image {
-  width: 200px;
-  border-radius: 8px;
-  margin-left: 130px;
+  width: 100px;
+  height: 100px;
+  border-radius: 20%;
+  object-fit: cover;
+  float: left;
+  margin-right: 20px;
 }
 
+/* Yield and Health Labels Section */
 .popup-description {
-  padding: 2px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  text-align: left;
+  color: #666;
 }
 
+/* Nutritional Information Table */
+.nutrition-table {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.nutrition-table .servings {
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+}
+
+.nutrition-table .macros {
+  flex: 2;
+  text-align: center;
+}
+
+.nutrition-table span {
+  display: block;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.nutrition-table p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Macronutrients - Protein, Fat, Carbs */
+.macronutrient-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.macronutrient-info .macronutrient {
+  text-align: center;
+  flex: 1;
+}
+
+.macronutrient-info .macronutrient span {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Cautions and Labels */
 .cautions {
-  color: rgb(201, 29, 29);
+  color: red;
+  font-weight: bold;
+}
+
+/* Health Labels and Diet Labels */
+.health-labels,
+.diet-labels {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.health-labels span,
+.diet-labels span {
+  background-color: #e0e0e0;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin: 5px;
+  font-size: 0.9rem;
+  color: #333;
+}
+strong {
   font-weight: 900;
+  color: #333;
+}
+
+.popup-servings strong {
+  font-weight: 900;
+  color: #333;
+}
+
+.popup-nutritional-m {
+  text-align: center;
+}
+
+.popup-nutritional-m strong {
+  color: #333;
+  font-weight: 900;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .popup-content {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .popup-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .popup-title {
+    font-size: 1.4rem;
+  }
+
+  .nutrition-table span {
+    font-size: 1.2rem;
+  }
+
+  .macronutrient-info .macronutrient span {
+    font-size: 1rem;
+  }
+}
+
+.popup-additional-details {
+  margin-top: -280px;
+  margin-left: 270px;
+  font-size: 1.1rem;
+}
+
+.highlight {
+  font-weight: 900;
+  color: #333;
+  margin-top: -20px;
+}
+
+.popup-diet-labels {
+  margin-left: -270px;
+  margin-top: -60px;
+}
+
+.popup-cautions {
+  margin-top: 10px;
+  margin-bottom: -20px;
 }
