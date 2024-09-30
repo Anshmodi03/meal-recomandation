@@ -116,7 +116,7 @@ const RecipeListPopup = ({ recipe, onClose }) => {
           </div>
 
           {/* Cautions Section */}
-          <div className="popup-cautions">
+{/*           <div className="popup-cautions">
             <h3 className=" caution">Cautions</h3>
             {recipe.recipe.cautions.length > 0 ? (
               <ul>
@@ -129,7 +129,7 @@ const RecipeListPopup = ({ recipe, onClose }) => {
             ) : (
               <p>No cautions listed for this recipe.</p>
             )}
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
