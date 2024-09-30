@@ -188,7 +188,7 @@
   border: none;
   cursor: pointer;
   font-size: 24px; /* Size of the icon */
-  color: #4f46e5; /* Color of the icon */
+  color: red !important ; /* Color of the icon */
 }
 
 .close-button:hover {
