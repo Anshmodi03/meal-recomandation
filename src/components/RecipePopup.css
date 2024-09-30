@@ -200,17 +200,13 @@ strong {
 }
 
 .popup-diet-labels {
-  margin-left: 200px;
   margin-top: 150px;
   margin-bottom: 100px;
 }
 
 .caution {
-  margin-top: -290px;
+  margin-top: -310px;
   font-weight: 900;
   color: #333;
 }
 
-.popup-cautions {
-  margin-bottom: 150px;
-}
